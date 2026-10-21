@@ -1,0 +1,10 @@
+body{
+  background-color: paleturquoise;
+  color: darkslateblue; 
+  font-family: comic-sans;
+  padding: 50px;
+}
+h1{
+  font-size: 30px; 
+  font-weight: 700;
+}

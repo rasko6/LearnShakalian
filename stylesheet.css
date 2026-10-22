@@ -41,6 +41,13 @@ nav a{
   color: #b46a48;
   font-weight: 700;
 }
+nav a:hover{
+  font-size: 1.55rem;
+  text-decoration: underline;
+  color: #b46a48;
+  transform: translateY(-2px);
+  font-weight: 700;
+}
 li{
   margin-left: 40px;
   width: 500px;

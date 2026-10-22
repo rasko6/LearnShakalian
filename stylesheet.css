@@ -1,8 +1,10 @@
+* {box-sizing: border-box;}
 body{
-  background-color: paleturquoise;
-  color: #2F4F4F; 
+  background-color: cornsilk;
+  color: brown; 
   font-family: 'Comic Sans MS';
   padding: 50px;
+  margin: 0;
 }
 h1{
   font-size: 30px; 
@@ -11,4 +13,22 @@ h1{
 @font-face {
   font-family: "SHAKAL";
   src: url("SHAKAL.ttf");
+}
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  background-color: wheat;
+}
+nav a{
+  font-size: 1.55rem;
+  text-decoration: none;
+  color: #a86444;
+  font-weight: 700;
+}
+li{
+  margin-left: 40px;
 }

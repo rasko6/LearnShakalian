@@ -2,7 +2,7 @@
 body{
   background-color: cornsilk;
   color: #8f3c31; 
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: serif;
   padding: 50px;
   margin: 0;
 }
@@ -20,11 +20,19 @@ h1{
 }
 p{
   font-size: 18px; 
-  font-weight: 500;
+  font-weight: 600;
 }
 @font-face {
   font-family: "SHAKAL";
   src: url("SHAKAL.ttf");
+}
+@font-face {
+  font-family: "SHAKAL2";
+  src: url("SHAKAL2.ttf");
+}
+.downloadlink:hover{
+  text-decoration: underline;
+  cursor: pointer;
 }
 nav {
   display: flex;
@@ -43,6 +51,7 @@ nav a{
 }
 nav a:hover{
   font-size: 1.55rem;
+  cursor: pointer;
   text-decoration: underline;
   color: #b46a48;
   transform: translateY(-2px);

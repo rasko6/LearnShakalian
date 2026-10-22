@@ -1,14 +1,26 @@
 * {box-sizing: border-box;}
 body{
   background-color: cornsilk;
-  color: brown; 
-  font-family: 'Comic Sans MS';
+  color: #8f3c31; 
+  font-family: Georgia, 'Times New Roman', Times, serif;
   padding: 50px;
   margin: 0;
 }
 h1{
   font-size: 30px; 
   font-weight: 700;
+}
+.main-wrap {
+  box-sizing: border-box;
+  width: 700px;
+  max-width: 100%;
+  margin-inline: auto;  
+  padding: 2%;
+  height: max-content;
+}
+p{
+  font-size: 18px; 
+  font-weight: 500;
 }
 @font-face {
   font-family: "SHAKAL";
@@ -26,9 +38,11 @@ nav {
 nav a{
   font-size: 1.55rem;
   text-decoration: none;
-  color: #a86444;
+  color: #b46a48;
   font-weight: 700;
 }
 li{
   margin-left: 40px;
+  width: 500px;
+  color: #b46a48;
 }

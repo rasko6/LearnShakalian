@@ -130,6 +130,12 @@ nav a:hover{
   transform: translateY(-2px);
   font-weight: 700;
 }
+a{
+  font-size: 18px; 
+  font-weight: 600;
+  color: #b46a48;
+  text-decoration: underline;
+}
 li{
   margin-left: 40px;
   width: 500px;

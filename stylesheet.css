@@ -1,4 +1,5 @@
 * {box-sizing: border-box;}
+
 body{
   background-color: cornsilk;
   color: #8f3c31; 
@@ -8,6 +9,7 @@ body{
   padding-top: 6%;
   padding-bottom: 6rem;
 }
+
 footer {
   position: fixed;
   inset: auto 0 0 0;   
@@ -69,7 +71,12 @@ footer a:hover{
   transform: translateX(-4px);
   transition: ease-out 200ms;
 }
+nav h1:hover{
+  transform: scale(1.03);
+  transition: ease-out 200ms;
+}
 h1{
+  transition: ease-out 200ms;
   font-size: 30px; 
   font-weight: 700;
 }
@@ -84,6 +91,16 @@ h1{
 p{
   font-size: 18px; 
   font-weight: 600;
+}
+li{
+  transition: ease-out 200ms; 
+  list-style: none;
+}  
+li:hover{
+  font-size: 18px; 
+  font-weight: 600;
+  transform: translateX(-4px);
+  transition: ease-out 400ms; 
 }
 @font-face {
   font-family: "SHAKAL";
@@ -112,6 +129,7 @@ nav {
   padding: 20px;
   padding-top: calc(20px + env(safe-area-inset-top, 0px));
   background-color: wheat;
+
 }
 nav a{
   font-size: 1.55rem;

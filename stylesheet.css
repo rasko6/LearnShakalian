@@ -2,9 +2,69 @@
 body{
   background-color: cornsilk;
   color: #8f3c31; 
-  font-family: serif;
+  font-family: sans-serif;
   padding: 50px;
   margin: 0;
+  padding-top: 6%;
+  padding-bottom: 6rem;
+}
+footer {
+  position: fixed;
+  inset: auto 0 0 0;   
+  z-index: 100;
+  box-sizing: border-box;   
+  width: 100%;
+  padding: 1.4rem;
+  padding-bottom: calc(1.4rem + env(safe-area-inset-bottom)); 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+  color: #f6dcd2;        
+  background-color: rgb(117, 49, 43);
+}
+.thing {
+  width: 240px;
+  max-width: 100%;
+  margin-inline: auto;
+  text-align: center;
+}
+footer a{
+  font-size: 1.10rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: ease-out 200ms;
+  color: #daab85;
+  font-weight: 700;
+}
+footer p{
+  font-size: 1.10rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: ease-out 200ms;
+  color: #daab85;
+  font-weight: 700;
+}
+footer p:hover{
+  font-size: 1.10rem;
+  display: inline-block;
+  text-decoration: none;
+  transition: ease-out 200ms;
+  color: wheat;
+  font-weight: 700;
+  transform: translateX(-4px);
+  transition: ease-out 200ms;
+}
+footer a:hover{
+  display: inline-block;
+  font-size: 1.10rem;
+  text-decoration: underline;
+  cursor: pointer;
+  color: wheat;
+  font-weight: 700;
+  transform: translateX(-4px);
+  transition: ease-out 200ms;
 }
 h1{
   font-size: 30px; 
@@ -35,18 +95,31 @@ p{
   cursor: pointer;
 }
 nav {
+  position: fixed;
+  inset: 0 0 auto 0;     
+  z-index: 100;
+
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 20px;
+
+  box-sizing: border-box;
   padding: 20px;
+  padding-top: calc(20px + env(safe-area-inset-top, 0px));
   background-color: wheat;
 }
 nav a{
   font-size: 1.55rem;
   text-decoration: none;
   color: #b46a48;
+  font-weight: 700;
+}
+nav h1{
+  font-size: 2.20rem;
+  text-decoration: none;
+  color: #8f3c31;
   font-weight: 700;
 }
 nav a:hover{

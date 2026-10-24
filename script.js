@@ -8,7 +8,7 @@ mainWrap.animate(
     { opacity: 1, transform: "translateY(0px)" },
     ],
     {
-        duration: 800,
+        duration: 700,
         easing: 'ease-out',
         },
     );

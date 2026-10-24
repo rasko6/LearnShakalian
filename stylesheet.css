@@ -11,16 +11,27 @@ body{
 }
 #quiz {
   display: flex;
+  flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 15px;
+  gap: 38px;
   margin: 50px;
+  max-width: 800px;
 }
-.card{
-  width: 70px;
+.card {
+  flex: 0 0 70px;
   height: 70px;
   background-color: #b46a48;
-  transition: ease-out 250ms;
   border-radius: 15px;
+  transition: ease-out 250ms;
+}
+button{
+  width: 120px;
+  border: 2px #8f3c31 solid;
+  height: 40px;
+  color: #f6dcd2; 
+  font-size: large;
+  font-family: sans-serif;
+  background-color: #b46a48;
 }
 .card:hover{
   width: 70px;
@@ -32,8 +43,10 @@ body{
 }
 .card input{
   position: relative;
-  width: 70px;
-  margin-top: 30px;
+  width: 40px;
+  margin-left: 15px;
+  height: 40;
+  margin-top: 20px;
 }
 .card h1{
   margin: auto;

@@ -53,9 +53,7 @@
         </footer>
         <script src="script.js"></script>
         <script>
-            const quIz = document.getElementById('quiz');
-            const resUlt = document.getElementById('resulter');
-
+        function submitt(){
             const valueA = document.getElementById('input-A').value;
             const valueB = document.getElementById('input-B').value;
             const valueV = document.getElementById('input-V').value;
@@ -76,58 +74,31 @@
             const valueO = document.getElementById('input-O').value;
             const valueP = document.getElementById('input-P').value;
 
-            function submitt(){
-                let rightA = false, rightB = false, rightV = false,
-                    rightG = false, rightg = false, rightD = false,
-                    rightE = false, righto = false, rightJ = false,
-                    rightj = false, rightZ = false, rightI = false,
-                    righti = false, rightK = false, rightL = false,
-                    rightM = false, rightN = false, rightO = false,
-                    rightP = false;
+            const check = (inputVal, answer, cardId) => {
+              document.getElementById(cardId).style.backgroundColor =
+              inputVal.toLowerCase() === answer ? 'green' : 'red';
+            };
 
-                if (valueA.toLowerCase() === 'a') rightA = true;
-                if (valueB.toLowerCase() === 'b') rightB = true;
-                if (valueV.toLowerCase() === 'v') rightV = true;
-                if (valueG.toLowerCase() === 'g') rightG = true;
-                if (valueg.toLowerCase() === 'g') rightg = true;
-                if (valueD.toLowerCase() === 'd') rightD = true;
-                if (valueE.toLowerCase() === 'e') rightE = true;
-                if (valueo.toLowerCase() === 'o') righto = true;
-                if (valueJ.toLowerCase() === 'j') rightJ = true;
-                if (valuej.toLowerCase() === 'j') rightj = true;
-                if (valueZ.toLowerCase() === 'z') rightZ = true;
-                if (valueI.toLowerCase() === 'i') rightI = true;
-                if (valuei.toLowerCase() === 'i') righti = true;
-                if (valueK.toLowerCase() === 'k') rightK = true;
-                if (valueL.toLowerCase() === 'l') rightL = true;
-                if (valueM.toLowerCase() === 'm') rightM = true;
-                if (valueN.toLowerCase() === 'n') rightN = true;
-                if (valueO.toLowerCase() === 'o') rightO = true;
-                if (valueP.toLowerCase() === 'p') rightP = true;
-
-                resUlt.textContent = "";
-
-                if (rightA) resUlt.textContent += "1: Right!\n";
-                if (rightB) resUlt.textContent += "2: Right!\n";
-                if (rightV) resUlt.textContent += "3: Right!\n";
-                if (rightG) resUlt.textContent += "4: Right!\n";
-                if (rightg) resUlt.textContent += "5: Right!\n";
-                if (rightD) resUlt.textContent += "6: Right!\n";
-                if (rightE) resUlt.textContent += "7: Right!\n";
-                if (righto) resUlt.textContent += "8: Right!\n";
-                if (rightJ) resUlt.textContent += "9: Right!\n";
-                if (rightj) resUlt.textContent += "10: Right!\n";
-                if (rightZ) resUlt.textContent += "11: Right!\n";
-                if (rightI) resUlt.textContent += "12: Right!\n";
-                if (righti) resUlt.textContent += "13: Right!\n";
-                if (rightK) resUlt.textContent += "14: Right!\n";
-                if (rightL) resUlt.textContent += "15: Right!\n";
-                if (rightM) resUlt.textContent += "16: Right!\n";
-                if (rightN) resUlt.textContent += "17: Right!\n";
-                if (rightO) resUlt.textContent += "18: Right!\n";
-                if (rightP) resUlt.textContent += "19: Right!\n";
-            }
-
+            check(valueA, 'a', 'card-A');
+            check(valueB, 'b', 'card-B');
+            check(valueV, 'v', 'card-V');
+            check(valueG, 'g', 'card-G');
+            check(valueg, 'g', 'card-g');
+            check(valueD, 'd', 'card-D');
+            check(valueE, 'e', 'card-E');
+            check(valueo, 'o', 'card-o');
+            check(valueJ, 'j', 'card-J');
+            check(valuej, 'j', 'card-j');
+            check(valueZ, 'z', 'card-Z');
+            check(valueI, 'i', 'card-I');
+            check(valuei, 'i', 'card-i');
+            check(valueK, 'k', 'card-K');
+            check(valueL, 'l', 'card-L');
+            check(valueM, 'm', 'card-M');
+            check(valueN, 'n', 'card-N');
+            check(valueO, 'o', 'card-O');
+            check(valueP, 'p', 'card-P');
+        }
         </script>
     </body>
 </html>

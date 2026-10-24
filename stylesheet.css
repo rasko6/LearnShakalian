@@ -9,6 +9,18 @@ body{
   padding-top: 6%;
   padding-bottom: 6rem;
 }
+h1{
+  color: #b46a48;
+}
+body.dark-theme{
+  background-color: #212224;
+  color: #eff1f1; 
+  font-family: sans-serif;
+  padding: 50px;
+  margin: 0;
+  padding-top: 6%;
+  padding-bottom: 6rem;
+}
 #quiz {
   display: flex;
   flex-wrap: wrap;

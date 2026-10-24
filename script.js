@@ -13,3 +13,9 @@ mainWrap.animate(
         },
     );
 });
+let curTheme = 1;
+const themememm = document.getElementById('themee');
+const themtemsfd = document.getElementById('themeChange');
+function sdfsdf(){
+    document.body.classList.toggle("dark-theme");
+}

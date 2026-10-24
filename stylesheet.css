@@ -18,8 +18,17 @@ body{
 .card{
   width: 70px;
   height: 70px;
-  background-color: #31378f;
+  background-color: #b46a48;
+  transition: ease-out 250ms;
   border-radius: 15px;
+}
+.card:hover{
+  width: 70px;
+  height: 70px;
+  background-color: #a5573f;
+  border-radius: 15px;
+  transform: translateY(-3px);
+  transition: ease-out 300ms;
 }
 .card input{
   position: relative;
@@ -28,14 +37,12 @@ body{
 }
 .card h1{
   margin: auto;
+  font-weight: 300;
+  margin-top: 14px;
   text-align: center;
   color: aliceblue;
-  font-family: 'SHAKAL2';
+  font-family: "SHAKAL-FINAL";
   font-size: 40px;
-}
-.card h2{
-  color: #95c1e6;
-  font-size: 20px;
 }
 footer {
   position: fixed;
@@ -132,10 +139,17 @@ li:hover{
   font-family: "SHAKAL";
   src: url("SHAKAL.ttf");
 }
+
 @font-face {
   font-family: "SHAKAL2";
   src: url("SHAKAL2.ttf");
 }
+
+@font-face {
+  font-family: "SHAKAL-FINAL";
+  src: url("shakalll.ttf");
+}
+
 .downloadlink:hover{
   text-decoration: underline;
   cursor: pointer;

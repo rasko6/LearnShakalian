@@ -10,28 +10,36 @@
             <h1>Shakalian Alphabet Quiz</h1>
             <p>Write the readings for the following letters:</p>
             <div id="quiz">
-              <div class="card"><h1>A</h1><input></div>
-              <div class="card"><h1>B</h1><input></div>
-              <div class="card"><h1>V</h1><input></div>
-              <div class="card"><h1>G</h1><input></div>
-              <div class="card"><h1>g</h1><input></div>
-              <div class="card"><h1>D</h1><input></div>
-              <div class="card"><h1>E</h1><input></div>
-              <div class="card"><h1>o</h1><input></div>
-              <div class="card"><h1>J</h1><input></div>
-              <div class="card"><h1>j</h1><input></div>
-              <div class="card"><h1>Z</h1><input></div>
-              <div class="card"><h1>I</h1><input></div>
-              <div class="card"><h1>i</h1><input></div>
-              <div class="card"><h1>K</h1><input></div>
-              <div class="card"><h1>L</h1><input></div>
-              <div class="card"><h1>M</h1><input></div>
-              <div class="card"><h1>N</h1><input></div>
-              <div class="card"><h1>O</h1><input></div>
-              <div class="card"><h1>P</h1><input></div>
+                <div class="card" id="card-A"><h1>A</h1><input type="text" id="input-A"></div>
+                <div class="card" id="card-B"><h1>B</h1><input type="text" id="input-B"></div>
+                <div class="card" id="card-V"><h1>V</h1><input type="text" id="input-V"></div>
+                <div class="card" id="card-G"><h1>G</h1><input type="text" id="input-G"></div>
+                <div class="card" id="card-g"><h1>g</h1><input type="text" id="input-g"></div>
+                <div class="card" id="card-D"><h1>D</h1><input type="text" id="input-D"></div>
+                <div class="card" id="card-E"><h1>E</h1><input type="text" id="input-E"></div>
+                <div class="card" id="card-o"><h1>o</h1><input type="text" id="input-o"></div>
+                <div class="card" id="card-J"><h1>J</h1><input type="text" id="input-J"></div>
+                <div class="card" id="card-j"><h1>j</h1><input type="text" id="input-j"></div>
+                <div class="card" id="card-Z"><h1>Z</h1><input type="text" id="input-Z"></div>
+                <div class="card" id="card-I"><h1>I</h1><input type="text" id="input-I"></div>
+                <div class="card" id="card-i"><h1>i</h1><input type="text" id="input-i"></div>
+                <div class="card" id="card-K"><h1>K</h1><input type="text" id="input-K"></div>
+                <div class="card" id="card-L"><h1>L</h1><input type="text" id="input-L"></div>
+                <div class="card" id="card-M"><h1>M</h1><input type="text" id="input-M"></div>
+                <div class="card" id="card-N"><h1>N</h1><input type="text" id="input-N"></div>
+                <div class="card" id="card-O"><h1>O</h1><input type="text" id="input-O"></div>
+                <div class="card" id="card-P"><h1>P</h1><input type="text" id="input-P"></div>
             </div>
-            <button id="submit">Submit Quiz</button>
-            <div id="results"></div>
+            <button onclick="submitt()">Submit Quiz</button>
+            <pre id="resulter"></pre>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
             <br>
             <br>
         </div>
@@ -44,5 +52,82 @@
             </div>
         </footer>
         <script src="script.js"></script>
+        <script>
+            const quIz = document.getElementById('quiz');
+            const resUlt = document.getElementById('resulter');
+
+            const valueA = document.getElementById('input-A').value;
+            const valueB = document.getElementById('input-B').value;
+            const valueV = document.getElementById('input-V').value;
+            const valueG = document.getElementById('input-G').value;
+            const valueg = document.getElementById('input-g').value;
+            const valueD = document.getElementById('input-D').value;
+            const valueE = document.getElementById('input-E').value;
+            const valueo = document.getElementById('input-o').value;
+            const valueJ = document.getElementById('input-J').value;
+            const valuej = document.getElementById('input-j').value;
+            const valueZ = document.getElementById('input-Z').value;
+            const valueI = document.getElementById('input-I').value;
+            const valuei = document.getElementById('input-i').value;
+            const valueK = document.getElementById('input-K').value;
+            const valueL = document.getElementById('input-L').value;
+            const valueM = document.getElementById('input-M').value;
+            const valueN = document.getElementById('input-N').value;
+            const valueO = document.getElementById('input-O').value;
+            const valueP = document.getElementById('input-P').value;
+
+            function submitt(){
+                let rightA = false, rightB = false, rightV = false,
+                    rightG = false, rightg = false, rightD = false,
+                    rightE = false, righto = false, rightJ = false,
+                    rightj = false, rightZ = false, rightI = false,
+                    righti = false, rightK = false, rightL = false,
+                    rightM = false, rightN = false, rightO = false,
+                    rightP = false;
+
+                if (valueA.toLowerCase() === 'a') rightA = true;
+                if (valueB.toLowerCase() === 'b') rightB = true;
+                if (valueV.toLowerCase() === 'v') rightV = true;
+                if (valueG.toLowerCase() === 'g') rightG = true;
+                if (valueg.toLowerCase() === 'g') rightg = true;
+                if (valueD.toLowerCase() === 'd') rightD = true;
+                if (valueE.toLowerCase() === 'e') rightE = true;
+                if (valueo.toLowerCase() === 'o') righto = true;
+                if (valueJ.toLowerCase() === 'j') rightJ = true;
+                if (valuej.toLowerCase() === 'j') rightj = true;
+                if (valueZ.toLowerCase() === 'z') rightZ = true;
+                if (valueI.toLowerCase() === 'i') rightI = true;
+                if (valuei.toLowerCase() === 'i') righti = true;
+                if (valueK.toLowerCase() === 'k') rightK = true;
+                if (valueL.toLowerCase() === 'l') rightL = true;
+                if (valueM.toLowerCase() === 'm') rightM = true;
+                if (valueN.toLowerCase() === 'n') rightN = true;
+                if (valueO.toLowerCase() === 'o') rightO = true;
+                if (valueP.toLowerCase() === 'p') rightP = true;
+
+                resUlt.textContent = "";
+
+                if (rightA) resUlt.textContent += "1: Right!\n";
+                if (rightB) resUlt.textContent += "2: Right!\n";
+                if (rightV) resUlt.textContent += "3: Right!\n";
+                if (rightG) resUlt.textContent += "4: Right!\n";
+                if (rightg) resUlt.textContent += "5: Right!\n";
+                if (rightD) resUlt.textContent += "6: Right!\n";
+                if (rightE) resUlt.textContent += "7: Right!\n";
+                if (righto) resUlt.textContent += "8: Right!\n";
+                if (rightJ) resUlt.textContent += "9: Right!\n";
+                if (rightj) resUlt.textContent += "10: Right!\n";
+                if (rightZ) resUlt.textContent += "11: Right!\n";
+                if (rightI) resUlt.textContent += "12: Right!\n";
+                if (righti) resUlt.textContent += "13: Right!\n";
+                if (rightK) resUlt.textContent += "14: Right!\n";
+                if (rightL) resUlt.textContent += "15: Right!\n";
+                if (rightM) resUlt.textContent += "16: Right!\n";
+                if (rightN) resUlt.textContent += "17: Right!\n";
+                if (rightO) resUlt.textContent += "18: Right!\n";
+                if (rightP) resUlt.textContent += "19: Right!\n";
+            }
+
+        </script>
     </body>
 </html>

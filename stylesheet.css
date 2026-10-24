@@ -26,12 +26,28 @@ body{
 }
 button{
   width: 120px;
-  border: 2px #8f3c31 solid;
+  border: none;
+  border-radius: 15px;
   height: 40px;
   color: #f6dcd2; 
+  box-shadow: 3px 4px #8f3c31;
   font-size: large;
   font-family: sans-serif;
+  transition: ease-out 250ms;
   background-color: #b46a48;
+}
+button:hover{
+  width: 120px;
+  border: none;
+  border-radius: 15px;
+  height: 40px;
+  color: #f6dcd2; 
+  transition: ease-out 250ms;
+  transform: scale(1.1);
+  box-shadow: 3px 4px #8f3c31;
+  font-size: large;
+  font-family: sans-serif;
+  background-color: #af6644;
 }
 .card:hover{
   width: 70px;
@@ -53,6 +69,7 @@ button{
   font-weight: 300;
   margin-top: 14px;
   text-align: center;
+  user-select: none;
   color: aliceblue;
   font-family: "SHAKAL-FINAL";
   font-size: 40px;

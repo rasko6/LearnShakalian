@@ -9,6 +9,34 @@ body{
   padding-top: 6%;
   padding-bottom: 6rem;
 }
+#quiz {
+  display: flex;
+  justify-content: flex-start;
+  gap: 15px;
+  margin: 50px;
+}
+.card{
+  width: 70px;
+  height: 70px;
+  background-color: #31378f;
+  border-radius: 15px;
+}
+.card input{
+  position: relative;
+  width: 70px;
+  margin-top: 30px;
+}
+.card h1{
+  margin: auto;
+  text-align: center;
+  color: aliceblue;
+  font-family: 'SHAKAL2';
+  font-size: 40px;
+}
+.card h2{
+  color: #95c1e6;
+  font-size: 20px;
+}
 footer {
   position: fixed;
   inset: auto 0 0 0;

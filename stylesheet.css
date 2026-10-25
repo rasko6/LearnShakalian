@@ -77,6 +77,12 @@ button:hover{
   height: 40;
   margin-top: 20px;
 }
+#drawing{
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
+  background-color: white;
+}
 .card h1{
   margin: auto;
   font-weight: 300;

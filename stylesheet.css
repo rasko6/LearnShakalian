@@ -11,6 +11,7 @@ body{
 }
 h1{
   color: #b46a48;
+  text-shadow: 2px 2px #d1724556;
 }
 body.dark-theme{
   background-color: #212224;
@@ -83,7 +84,7 @@ button:hover{
   text-align: center;
   user-select: none;
   color: aliceblue;
-  font-family: "SHAKAL-FINAL";
+  font-family: "SHAKAL-FINALEST";
   font-size: 40px;
 }
 footer {
@@ -185,6 +186,11 @@ li:hover{
 @font-face {
   font-family: "SHAKAL2";
   src: url("SHAKAL2.ttf");
+}
+
+@font-face {
+  font-family: "SHAKAL-FINALEST";
+  src: url("shakalfinal.ttf");
 }
 
 @font-face {
